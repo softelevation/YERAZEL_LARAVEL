@@ -10,19 +10,12 @@
       <title>Yerazel</title>
    </head>
 
-
-
     <script>
 
-          var site_url="{{url('/')}}";   
+          var site_url="{{url('/')}}";
           var _token = "{{ csrf_token() }}";
 
-    
-
     </script>
-
-
-
 
 
     <body id="root">
