@@ -503,7 +503,6 @@
             <?php } ?>
         </div>
     </div>
-
     <section class="getRebate-sec">
         <div class="howGetRetable margin-top-105">
             <div class="container">
