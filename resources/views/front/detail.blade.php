@@ -95,7 +95,7 @@
                     </div>
                     <h5 class="desc-headline">Listing Sponsored by Hilton &amp; Hyland (CA Lic 00389584)</h5>
                     <ul class="property-features margin-top-0">
-                        <li>Agent: <span>Neil Mcdermott</span></li>
+                        <li>Agent: <span>{{@$response['ListAgentFirstName']}} {{@$response['ListAgentLastName']}}</span></li>
                         <li>Phone: <span>310-278-3311</span></li>
                     </ul>
                 </div>
