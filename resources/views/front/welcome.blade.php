@@ -485,24 +485,68 @@
         </div>
     </section>
     <section class="newlyAddedProperty">
-        <div class="container">
+         <div class="container">
             <div class="propertyMainHeadding">
-                <h1 class=" f-36">Newly Added</h1>
-            </div>
-        </div>
-    </section>
-
-    <div class="col-sm-12">
-        <div class="row">
-            <?php foreach($response['value'] as $key=>$val) { ?>
-                <div class="col-sm-6">
-                    <a href="/Details/{{@$val['ListingKeyNumeric']}}">
-                        {{@$val['ListOfficeName']}}
+              <div class="d-flex justify-content-between">
+                 <h1 class=" f-36">Newly Added</h1>
+                 <div class="slider_icon position-relative">
+                   <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     </a>
-                </div>
-            <?php } ?>
-        </div>
-    </div>
+                    <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                 </div>
+               </div>
+
+               <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="9000">
+                  <div class="carousel-inner row w-100 mx-auto m-0" role="listbox">
+                     <?php 
+                        //echo "<pre>";print_r($response['value']);die("hff");
+                           foreach($response['value'] as $key=>$val) { 
+                    ?>
+                      <div class="carousel-item col-md-4  active">
+                         <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                              <a href="#" title="image 1" class="thumb">
+                               <div class="addedHome listing-item position-relative" tabindex="-1" style="width: 100%; display: inline-block;">
+                                   <a href="/Details/{{@$val['ListingKeyNumeric']}}">
+                                      <div class="listing-badges"><span>${{@$val['CurrentPrice']}} Rebate</span></div>
+                                      <div class="listing-img-content"><span class="listing-price">${{@$val['CurrentPrice']}} <i>${{@$val['LotSizeSquareFeet']}} / {{@$val['LotSizeUnits']}}</i></span><span class=""><i class="fa fa-star-o" aria-hidden="true"></i></span></div>
+                                   </a>
+                                   <div class="sliderImage">
+                                     <img src="<?php echo url('/')?>/front/images/propertyslider1.jpg" alt="property-image" class="img-fluid">
+                                   </div>
+                                   <div class="listing-content">
+                                      <div class="listing-title">
+                                         <h4 class="mb-3"><a href="/Details/{{@$val['ListingKeyNumeric']}}">{{@$val['ListOfficeName']}}</a></h4>
+                                         <a class="listing-address popup-gmaps" href="/">
+                                            <p class="mb-0"><i class="fa fa-map-marker"></i> {{@$val['City']}}</p>
+                                            <p class="mb-0">{{@$val['StateOrProvince']}} {{@$val['PostalCode']}} </p>
+                                         </a>
+                                      </div>
+                                      <ul class="listing-features">
+                                         <li>Area <span>{{@$val['LotSizeSquareFeet']}} / {{@$val['LotSizeUnits']}}</span></li>
+                                         <li>Bedrooms <span>{{@$val['BedroomsTotal']}}</span></li>
+                                         <li>Bathrooms <span>{{@$val['BathroomsFull']}}</span></li>
+                                      </ul>
+                                      <div class="listing-footer"><a href="/">&nbsp;</a><span><i class="fa fa-calendar-o"></i> 8 days ago</span></div>
+                                   </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                      </div>
+                  <?php } ?>
+                      
+                      
+                  </div>
+              </div>
+            </div>
+         </div>
+      </section>
+
+   
     <section class="getRebate-sec">
         <div class="howGetRetable margin-top-105">
             <div class="container">

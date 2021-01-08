@@ -40,7 +40,7 @@
     </div>
     <nav class="sticky p-0 navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <a href="#home" class="mr-md-5 mr-4 navbar-brand"><img class="img-fluid"
+            <a href="/" class="mr-md-5 mr-4 navbar-brand"><img class="img-fluid"
                     src="<?php echo url('/')?>/front/images/logo.png" alt="logo" width="185px">
             </a>
             <button aria-controls="basic-navbar-nav" type="button" aria-label="Toggle navigation"
