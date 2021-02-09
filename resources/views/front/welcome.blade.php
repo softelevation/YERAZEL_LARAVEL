@@ -503,7 +503,7 @@
                   <div class="carousel-inner row w-100 mx-auto m-0" role="listbox">
                      <?php 
                         //echo "<pre>";print_r($response['value']);die("hff");
-                           foreach($response['value'] as $key=>$val) { 
+                           foreach($respons_e as $key=>$val) { 
                     ?>
                       <div class="carousel-item col-md-4  active">
                          <div class="panel panel-default">
