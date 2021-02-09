@@ -501,10 +501,7 @@
 
                <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="9000">
                   <div class="carousel-inner row w-100 mx-auto m-0" role="listbox">
-                     <?php 
-                        //echo "<pre>";print_r($response['value']);die("hff");
-                           foreach($respons_e as $key=>$val) { 
-                    ?>
+                    @foreach($respons_e as $val)
                       <div class="carousel-item col-md-4  active">
                          <div class="panel panel-default">
                             <div class="panel-thumbnail">
@@ -537,9 +534,7 @@
                             </div>
                           </div>
                       </div>
-                  <?php } ?>
-                      
-                      
+					@endforeach
                   </div>
               </div>
             </div>
