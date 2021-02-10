@@ -518,8 +518,8 @@
                                       <div class="listing-title">
                                          <h4 class="mb-3"><a href="/Details/{{@$val['ListingKeyNumeric']}}">{{@$val['ListOfficeName']}}</a></h4>
                                          <a class="listing-address popup-gmaps" href="/">
-                                            <p class="mb-0"><i class="fa fa-map-marker"></i> {{@$val['City']}}</p>
-                                            <p class="mb-0">{{@$val['StateOrProvince']}} {{@$val['PostalCode']}} </p>
+                                            <p class="mb-0"><i class="fa fa-map-marker"></i> {{@$val['City']}} {{@$val['StateOrProvince']}} {{@$val['PostalCode']}}</p>
+                                           
                                          </a>
                                       </div>
                                       <ul class="listing-features">
