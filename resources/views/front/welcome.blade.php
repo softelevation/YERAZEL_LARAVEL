@@ -524,8 +524,8 @@
                                       </div>
                                       <ul class="listing-features">
                                          <li>Area <span>{{@$val['LotSizeSquareFeet']}} / {{@$val['LotSizeUnits']}}</span></li>
-                                         <li>Bedrooms <span>{{@$val['BedroomsTotal']}}</span></li>
-                                         <li>Bathrooms <span>{{@$val['BathroomsFull']}}</span></li>
+                                         <li>Bedrooms <span>{{($val['BedroomsTotal']) ? $val['BedroomsTotal']:0}}</span></li>
+                                         <li>Bathrooms <span>{{($val['BathroomsFull']) ? $val['BathroomsFull']:0 }}</span></li>
                                       </ul>
                                       <div class="listing-footer"><a href="/">&nbsp;</a><span><i class="fa fa-calendar-o"></i> 8 days ago</span></div>
                                    </div>
