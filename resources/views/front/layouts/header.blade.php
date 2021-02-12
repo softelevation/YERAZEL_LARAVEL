@@ -54,9 +54,8 @@
                     </a>
                 </div>
                 <div class="ml-auto">
-                    <button type="button" class="loginBtn btn btn-primary"><i class="fa fa-sign-out"
-                            aria-hidden="true"></i> Log In</button><button type="button"
-                        class="registerBtn btn btn-primary">Register for Rebate</button>
+                    <button type="button" onclick="location.href = '{{url('/login')}}';" class="loginBtn btn btn-primary"><i class="fa fa-sign-out" aria-hidden="true"></i> Log In</button>
+					<button type="button" class="registerBtn btn btn-primary">Register for Rebate</button>
                 </div>
             </div>
         </div>

@@ -5,7 +5,10 @@ namespace App\Http\Controllers\front;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Product;
+use App\Models\Client;
 use App\Models\ProductDetail;
+use Auth;
+Use Redirect;
 
 class HomeController extends Controller
 {
@@ -124,6 +127,43 @@ class HomeController extends Controller
 		print_r($res_ponse);
 		die;
 		
+	}
+	
+	function login(){
+		return view('login');
+	}
+	
+	
+	function loginPost(Request $request){
+		$userdata = array(
+			'email'     => $request->email,
+			'password'  => $request->password
+		);
+		if(Auth::attempt($userdata)) {
+			return Redirect::to('dashboard');
+		} else {
+			return Redirect::to('login')->with('invalid_login','Invalid email or password');
+		}
+	}
+	
+	function dashboard(){
+		$client = Client::all();
+		return view('front/dashboard')->with('clients',$client);
+	}
+	
+	function client(){
+		$client = Client::all();
+		return view('front/client')->with('client',$client);
+	}
+	
+	function showing(){
+		
+		// echo '<pre>';
+		// print_r(Auth::user()->toArray());
+		// die;
+		
+		// die('wwwwwwwwwwwww');
+		// return view('front/showing');
 	}
 	
 }
