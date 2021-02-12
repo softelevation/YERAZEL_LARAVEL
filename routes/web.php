@@ -18,6 +18,7 @@ Route::get('/', function () {
 });
 
 
+
 Route::group(['namespace'=>'front'],function() {
 	Route::get('/', 'HomeController@index')->name('index');
     Route::any('/Details/{id}', 'HomeController@Details')->name('Details');
