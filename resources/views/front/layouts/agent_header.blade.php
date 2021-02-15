@@ -162,9 +162,9 @@
                         <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown" aria-expanded="false"></span><span class="avatar avatar-online">
 						<img src="{{ url('agents/images/user.png') }}" alt="avatar"><i></i></span><span class="ml-3 user-name text-bold-700">John Doe</a>
                         <div class="dropdown-menu dropdown-menu-right">
-                           <a class="dropdown-item" href="#"><i class="fas fa-user-plus"></i> Manage Account</a>
+                           <!-- a class="dropdown-item" href="#"><i class="fas fa-user-plus"></i> Manage Account</a>
                            <a class="dropdown-item" href="#"><i class="fas fa-key"></i> Change Password</a>
-                           <a class="dropdown-item" href="#"><i class="fas fa-sync-alt"></i> Activity Log</a>
+                           <a class="dropdown-item" href="#"><i class="fas fa-sync-alt"></i> Activity Log</a -->
                            <a class="dropdown-item" href="logout"><i class="fas fa-sign-out-alt"></i> Log out</a>
                         </div>
                      </li>
