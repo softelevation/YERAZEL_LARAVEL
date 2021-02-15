@@ -30,5 +30,12 @@ Route::group(['namespace'=>'front'],function() {
 	Route::get('/dashboard', 'HomeController@dashboard')->name('dashboard');
 	Route::get('/client', 'HomeController@client')->name('client');
 	Route::get('/showing', 'HomeController@showing')->name('showing');
+	Route::get('/open-houses', 'HomeController@openHouses')->name('open-houses');
 	
+});
+
+
+Route::get('/logout', function () {
+    Auth::logout();
+    return redirect('/');
 });

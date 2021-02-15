@@ -212,14 +212,14 @@
                         </a>
                      </li>
                      <li class="sidebar-item">
-                        <a class="sidebar-link waves-effect waves-dark sidebar-link" href="open-houses.html"
+                        <a class="sidebar-link waves-effect waves-dark sidebar-link" href="open-houses"
                            aria-expanded="false">
                         <i class="fas fa-home"></i>
                         <span class="hide-menu">Open Houses</span>
                         </a>
                      </li>
                      <li class="sidebar-item">
-                        <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#"
+                        <a class="sidebar-link waves-effect waves-dark sidebar-link" href="logout"
                            aria-expanded="false">
                         <i class="fas fa-sign-out-alt"></i>
                         <span class="hide-menu">Logout</span>

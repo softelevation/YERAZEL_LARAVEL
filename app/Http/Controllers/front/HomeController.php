@@ -157,13 +157,11 @@ class HomeController extends Controller
 	}
 	
 	function showing(){
-		
-		// echo '<pre>';
-		// print_r(Auth::user()->toArray());
-		// die;
-		
-		// die('wwwwwwwwwwwww');
-		// return view('front/showing');
+		return view('front/showing');
+	}
+	
+	function openHouses(){
+		return view('front/openHouses');
 	}
 	
 }
