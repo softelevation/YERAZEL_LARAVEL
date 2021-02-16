@@ -164,4 +164,9 @@ class HomeController extends Controller
 		return view('front/openHouses');
 	}
 	
+	function rebate(){
+		$respons_e = Product::all()->toArray();
+		return view('front/rebate',compact('respons_e'));
+	}
+	
 }
