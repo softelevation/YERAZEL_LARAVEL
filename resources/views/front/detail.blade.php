@@ -9,12 +9,15 @@
                 <div class="main-col-top d-flex justify-content-between">
                     <div class="propertyLocation">
                         <h2>840 Green <span class="property-badge">$ {{@$response['CurrentPrice']}} Rebate</span></h2>
-                        <span><a href="#location" class="listing-address"><i class="fa fa-map-marker"></i>{{@$response['City']}} / {{@$response['StateOrProvince']}}
+                        <span><a href="#location" class="listing-address"><i
+                                    class="fa fa-map-marker"></i>{{@$response['City']}} /
+                                {{@$response['StateOrProvince']}}
                                 {{@$response['PostalCode']}}</a></span>
                     </div>
                     <div class="property-pricing">
                         <div class="property-price">$ {{@$response['CurrentPrice']}} </div>
-                        <div class="sub-price">{{@$response['LotSizeSquareFeet']}} / {{@$response['LotSizeUnits']}}</div>
+                        <div class="sub-price">{{@$response['LotSizeSquareFeet']}} / {{@$response['LotSizeUnits']}}
+                        </div>
                     </div>
                 </div>
             </div>
@@ -95,7 +98,8 @@
                     </div>
                     <h5 class="desc-headline">Listing Sponsored by Hilton &amp; Hyland (CA Lic 00389584)</h5>
                     <ul class="property-features margin-top-0">
-                        <li>Agent: <span>{{@$response['ListAgentFirstName']}} {{@$response['ListAgentLastName']}}</span></li>
+                        <li>Agent: <span>{{@$response['ListAgentFirstName']}} {{@$response['ListAgentLastName']}}</span>
+                        </li>
                         <li>Phone: <span>310-278-3311</span></li>
                     </ul>
                 </div>

@@ -1439,6 +1439,18 @@ a.listing-address {
     align-items: center;
     bottom: auto;
 }
+.DYOBColors .inline.color-gary {
+    background-image: url('../images/color-gray.jpg');
+    position: relative;
+}
+.DYOBColors .inline.color-almond {
+    background-image: url('../images/color-almond.jpg');
+    position: relative;
+}
+.DYOBColors .inline.color-white {
+    background-image: url('../images/color-white.jpg');
+    position: relative;
+}
 
 
 
@@ -1447,9 +1459,7 @@ a.listing-address {
 
 
 
-
-
-@media only screen and (max-width: 1366px) and (min-width: 1240px)
+@media only screen and (max-width: 1366px) and (min-width: 1240px){
 .listing-features li {
     margin-right: 18px;
 }

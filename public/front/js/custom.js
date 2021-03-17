@@ -39,4 +39,10 @@ $('#carouselExample').on('slide.bs.carousel', function (e) {
         $(".modal-profile").modal({show:true});
     });
 
-  });
+  }); 
+
+
+
+
+
+
