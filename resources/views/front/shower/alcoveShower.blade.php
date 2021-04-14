@@ -46,7 +46,7 @@
                         <p>$1500</p>
                     </div>
                     <div class="project-p">
-                        <div id="projectshower" class="Rectangle col-md-12 col-sm-12 col-xs-12">
+                        <div id="projectshower" class="Rectangle col-md-12 col-sm-12 col-xs-12 @if($url_name == 'alcove-shower') active-class @endIf">
                             <a href="{{ url('alcove-shower') }}">Alcove Shower</a>
                         </div>
                         <p>$1500</p>
@@ -179,7 +179,7 @@
                                     <img alt="4x4 tile pattern" id="112" data-name="Gray Diamon"
                                         class="dyob-item item ImgDYOB ImgDYOB2 wall-pattren10white"
                                         src="assets/images/wall-pattren1.jpg">
-                                    <p class="itemTag">Gray Diamon</p>
+                                    <p class="itemTag">Gray Diamond</p>
                                 </div>
                             </div>
                             <div id="dyob-item-wrapper" class=" col-md-4 col-sm-6 internal dyob-item-wrapper">
@@ -554,7 +554,7 @@
                             <div id="dyob-item-wrapper" class="col-lg-4 col-md-4 col-sm-6 internal dyob-item-wrapper">
                                 <div id="112" class="item internal" style="padding-left: 0">
                                     <img alt="4x4 tile pattern" id="112" data-name='8" bright white polished corner shelf Bright White 1-Tier Ceramic Wall Mount Bathroom Shelf'
-                                        class="dyob-item item ImgDYOB ImgDYOB4 corner-shelves-bg" data-type="png"
+                                        class="dyob-item item ImgDYOB ImgDYOB4 corner1white" data-type="png"
                                         src="assets/images/corner-shelves-1.jpg">
                                     <p class="itemTag">8" bright white polished corner shelf Bright White 1-Tier Ceramic
                                         Wall Mount Bathroom Shelf
@@ -753,11 +753,11 @@ roads-latest-l2-2.jpg">
                 <div class="row">
                     <div class="outer DYOBItems2" id="DYOBItems2">
                         <div id="MovableTitle2" class="DYOBColors Select-your">
-                            <p class="titreSection">Select your Sealant & Adhesive</p>
+                            <p class="titreSection">Included Sealant & Adhesive</p>
                         </div>
-                        <div id="Available2" class="row Available-colors-for col-sm-12 mt-0">
+                        <!-- <div id="Available2" class="row Available-colors-for col-sm-12 mt-0">
                             Included Sealant & Adhesive
-                        </div>
+                        </div> -->
                         <div class="dyob-item-mobile-wrapper clearfix" id="dyob-item-mobile-wrapper2">
                             <div id="dyob-item-wrapper" class="col-lg-3 col-md-4 col-sm-6 internal dyob-item-wrapper">
                                 <div id="112" class="item internal" style="padding-left: 0">

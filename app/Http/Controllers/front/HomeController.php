@@ -59,12 +59,14 @@ class HomeController extends Controller
     public function bath(Request $request){
 		Session::forget('bathtub');
         $data = array();
+		$data['url_name'] = 'bath';
         return view('front/bath/list',$data);
     }
 
     public function shower(Request $request){
 		Session::forget('bathtub');
         $data = array();
+		$data['url_name'] = 'shower';
 		$input = array();
 		$input['step1'] = url('assets/images/showertub-whitemarble.jpg');
 		Session::put('bathtub', $input);
@@ -170,6 +172,7 @@ class HomeController extends Controller
 		try {
 			Session::forget('bathtub');
 			$data = array();
+			$data['url_name'] = 'alcove-shower';
 			$input = array();
 			$input['step1'] = url('assets/images/showertub-whitemarble.jpg');
 			Session::put('bathtub', $input);

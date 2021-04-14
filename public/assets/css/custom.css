@@ -192,8 +192,7 @@ li {
     color: #fff;
 }
 
-.Rectangle:hover,
-.QuickStartLong:hover {
+.Rectangle:hover, .QuickStartLong:hover, .project-p .active-class {
     background: #00747e;
 }
 
@@ -1160,7 +1159,7 @@ table {
     }
     .cornershelf {
         top: 90px;
-        left: 264px;
+        left: 256px;
         width: 25px;
     }
     .soapdish {
@@ -1207,7 +1206,7 @@ table {
     }
     .cornershelf {
         top: 90px;
-        left: 262px;
+        left: 256px;
     }
     .soapdish {
         left: 182px;
@@ -1425,7 +1424,7 @@ table {
     }
     .cornershelf {
         top: 180px;
-        left: 488px;
+        left: 476px;
         width: 41px
     }
     .soapdish {
@@ -1485,7 +1484,7 @@ table {
     }
     .cornershelf {
         top: 230px;
-        left: 462px;
+        left: 446px;
         width: 51px
     }
     .soapdish {
@@ -1545,7 +1544,7 @@ table {
     }
     .cornershelf {
         top: 200px;
-        left: 487px;
+        left: 472px;
         width: 53px
     }
     .soapdish {
@@ -1580,7 +1579,7 @@ table {
 @media screen and (min-width:1300px) {
     .cornershelf {
         top: 230px;
-        left: 488px;
+        left: 472px;
         width: 53px;
     }
 }
@@ -1611,7 +1610,7 @@ table {
     }
     .cornershelf {
         top: 250px;
-        left: 574px;
+        left: 560px;
         width: 50px;
     }
     .soapdish {
@@ -1670,7 +1669,7 @@ table {
     }
     .cornershelf {
         top: 260px;
-        left: 610px;
+        left: 592px;
         width: 64px
     }
     .soapdish {
@@ -1704,7 +1703,7 @@ table {
 @media screen and (min-width:1700px) {
     .cornershelf {
         top: 300px;
-        left: 638px;
+        left: 620px;
         width: 64px
     }
 }
@@ -1731,7 +1730,7 @@ table {
     }
     .cornershelf {
         top: 300px;
-        left: 767px;
+        left: 746px;
         width: 64px
     }
     .soapdish {

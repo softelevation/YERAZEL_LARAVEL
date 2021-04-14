@@ -34,7 +34,7 @@
                 </div>
                 <div class="projectDiv d-inline-flex">
                     <div class="project-p">
-                        <div id="projectbathtub" class="Rectangle col-md-12 col-sm-12 col-xs-12">
+                        <div id="projectbathtub" class="Rectangle col-md-12 col-sm-12 col-xs-12 @if($url_name == 'bath') active-class @endIf">
                             <a href="{{ url('bath') }}">Bathtub</a>
                         </div>
                         <p>$1500</p>
@@ -82,7 +82,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <!-- <div class="row">
                         <div id="DYOBColorsText1" class="row Available-colors-for col-sm-12 DYOBColors"
                             style="display:inline-flex;display:-webkit-inline-flex;">Select your color
                         </div>
@@ -96,8 +96,8 @@
                             <i id="13step1" onclick="getImage(this.id,1,133,'ivorymarble');"
                                 class="inline color13"></i>
                         </div>
-                    </div>
-                    <div id="DYOBColorsText1" class="row Available-colors-for col-sm-12 DYOBColors"
+                    </div> -->
+                    <!-- <div id="DYOBColorsText1" class="row Available-colors-for col-sm-12 DYOBColors"
                         style="display:inline-flex;display:-webkit-inline-flex;">Select your Size</div>
                     <div id="DYOBSize1" class="DYOBSize" style="display:inline-flex;display:-webkit-inline-flex;">
                         <form>
@@ -119,7 +119,7 @@
                             </div>
                         </form>
                     </div>
-                </div>
+                </div> -->
                 <div class="row">
                     <div class="panel panel-default panel-default-dyob">
                         <div class="panel-body panel-dyob">
@@ -284,7 +284,7 @@
                             <div id="dyob-item-wrapper" class="col-lg-4 col-md-4 col-sm-6 internal dyob-item-wrapper">
                                 <div id="112" class="item internal" style="padding-left: 0">
                                     <img alt="4x4 tile pattern" id="112"
-                                        class="dyob-item item ImgDYOB ImgDYOB4 corner-shelves-bg" data-type="png" data-name='8" bright white polished corner shelf Bright White 1-Tier Ceramic Wall Mount Bathroom Shelf'
+                                        class="dyob-item item ImgDYOB ImgDYOB4 corner1white" data-type="png" data-name='8" bright white polished corner shelf Bright White 1-Tier Ceramic Wall Mount Bathroom Shelf'
                                         src="assets/images/corner-shelves-1.jpg">
                                     <p class="itemTag">8" bright white polished corner shelf Bright White 1-Tier Ceramic
                                         Wall Mount Bathroom Shelf
@@ -294,7 +294,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <!-- <div class="row">
                     <div class="outer DYOBItems2" id="DYOBItems2">
                         <div id="DYOBColorsText1" class="row Available-colors-for col-sm-12 DYOBColors"
                             style="display:inline-flex;display:-webkit-inline-flex;">Available Soap Dishes
@@ -350,7 +350,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> 
                 <div class="row">
                     <div id="DYOBColorsText1" class="row Available-colors-for col-sm-12 DYOBColors"
                         style="display:inline-flex;display:-webkit-inline-flex;">Select your color
@@ -383,7 +383,7 @@
                             </div>
                         </form>
                     </div>
-                </div>
+                </div>-->
                 <div class="row">
                     <div class="outer DYOBItems2" id="DYOBItems2">
                         <p class="titreSection firstTitreSection">Select your grab bars
@@ -622,11 +622,11 @@ roads-latest-l2-2.jpg">
                 <div class="row">
                     <div class="outer DYOBItems2" id="DYOBItems2">
                         <div id="MovableTitle2" class="DYOBColors Select-your">
-                            <p class="titreSection">Select your Sealant & Adhesive</p>
+                            <p class="titreSection">Included Sealant & Adhesive</p>
                         </div>
-                        <div id="Available2" class="row Available-colors-for col-sm-12 mt-0">
+                        <!-- <div id="Available2" class="row Available-colors-for col-sm-12 mt-0">
                             Included Sealant & Adhesive
-                        </div>
+                        </div> -->
                         <div class="dyob-item-mobile-wrapper clearfix" id="dyob-item-mobile-wrapper2">
                             <div id="dyob-item-wrapper" class="col-lg-3 col-md-4 col-sm-6 internal dyob-item-wrapper">
                                 <div id="112" class="item internal" style="padding-left: 0">
