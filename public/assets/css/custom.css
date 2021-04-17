@@ -6,7 +6,6 @@
     font-style: normal;
 }
 
-
 @font-face {
     font-family: 'Conv_Gotham Book Regular';
     src: url('../fonts/Gotham Book Regular.eot');
@@ -1172,9 +1171,9 @@ table {
         top: 120px
     }
     .grabbar {
-        top: 110px;
-        left: 180px;
-        width: 50px;
+        top: 120px;
+        left: 276px;
+        width: 17px;
     }
     .grabbar-150 {
         top: 147px;
@@ -1214,8 +1213,8 @@ table {
         left: 182px;
     }
     .grabbar {
-        top: 115px;
-        left: 172px;
+        top: 120px;
+        left: 276px;
     }
 }
 /*@media screen and (max-width:766px) and (orientation:landscape) {
@@ -1438,9 +1437,9 @@ table {
         top: 255px
     }
     .grabbar {
-        top: 240px;
-        left: 345px;
-        width: 73px;
+        top: 220px;
+        left: 511px;
+        width: 30px;
     }
     .grabbar-150 {
         top: 289px;
@@ -1498,9 +1497,9 @@ table {
         top: 296px
     }
     .grabbar {
-        top: 282px;
-        left: 276px;
-        width: 95px;
+        top: 252px;
+        left: 490px;
+        width: 35px;
     }
     .grabbar-150 {
         top: 362px;
@@ -1558,9 +1557,9 @@ table {
         top: 263px
     }
     .grabbar {
-        top: 248px;
-        left: 296px;
-        width: 110px
+        top: 252px;
+        left: 518px;
+        width: 35px;
     }
     .grabbar-150 {
         top: 341px;
@@ -1643,6 +1642,11 @@ table {
         left: 288px;
         width: 359px
     }
+    .grabbar {
+        top: 252px;
+        left: 602px;
+        width: 35px;
+    }
 }
 @media screen and (min-width:1600px) {
     .bathtub {
@@ -1701,6 +1705,11 @@ table {
         left: 280px;
         width: 478px
     }
+    .grabbar {
+        top: 362px;
+        left: 700px;
+        width: 45px;
+    }
 }
 @media screen and (min-width:1700px) {
     .cornershelf {
@@ -1708,6 +1717,12 @@ table {
         left: 645px;
         width: 64px
     }
+    .grabbar {
+        top: 362px;
+        left: 700px;
+        width: 45px;
+    }
+
 }
 @media screen and (min-width:1800px) {
         .bathtub {
@@ -1744,9 +1759,9 @@ table {
         top: 363px
     }
     .grabbar {
-        top: 355px;
-        left: 760px;
-        width: 85px;
+        top: 362px;
+        left: 806px;
+        width: 45px;
     }
     .doors {
         width: 484px;

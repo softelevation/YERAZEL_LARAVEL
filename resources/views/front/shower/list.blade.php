@@ -318,7 +318,7 @@
                             <div id="dyob-item-wrapper" class=" col-md-4 col-sm-6 internal dyob-item-wrapper">
                                 <div id="112" class="item internal" style="padding-left: 0">
                                     <img alt="4x4 tile pattern" id="112" data-name="Gray Diamond"
-                                        class="dyob-item item ImgDYOB ImgDYOB2 wall-pattren10white"
+                                        class="dyob-item item ImgDYOB ImgDYOB2 wall-pattren10whitewhitemarble" data-type="png"
                                         src="assets/images/wall-pattren1.jpg">
                                     <p class="itemTag">Gray Diamond</p>
                                 </div>
@@ -326,7 +326,7 @@
                             <div id="dyob-item-wrapper" class=" col-md-4 col-sm-6 internal dyob-item-wrapper">
                                 <div id="112" class="item internal" style="padding-left: 0">
                                     <img alt="4x4 tile pattern" id="112" data-name="Almond 8X10"
-                                        class="dyob-item item ImgDYOB ImgDYOB2 wall-pattren2whiteivorymarble"
+                                        class="dyob-item item ImgDYOB ImgDYOB2 wall-pattren2whiteivorymarble" data-type="png"
                                         src="assets/images/wall-pattren2.jpg">
                                     <p class="itemTag">Almond 8X10</p>
                                 </div>
@@ -334,7 +334,7 @@
                             <div id="dyob-item-wrapper" class=" col-md-4 col-sm-6 internal dyob-item-wrapper">
                                 <div id="112" class="item internal" style="padding-left: 0">
                                     <img alt="4x4 tile pattern" id="112" data-name="White Subway"
-                                        class="dyob-item item ImgDYOB ImgDYOB2 wall-pattren3white"
+                                        class="dyob-item item ImgDYOB ImgDYOB2 wall-pattren3white" data-type="png"
                                         src="assets/images/wall-pattren3.jpg">
                                     <p class="itemTag">White Subway</p>
                                 </div>
@@ -730,7 +730,7 @@
                             <div id="dyob-item-wrapper" class=" col-md-4 col-sm-6 internal dyob-item-wrapper">
                                 <div id="112" class="item internal" style="padding-left: 0">
                                     <img alt="4x4 tile pattern" id="112" data-name="44-in to 72-in Brushed Nickel Tension Single Straight Shower  Rod"
-                                        class="dyob-item item ImgDYOB ImgDYOB7 roads4white"
+                                        class="dyob-item item ImgDYOB ImgDYOB7 roads4white" data-type="png"
                                         src="assets/images/roads-latest-l-1.jpg">
                                     <p class="itemTag">44-in to 72-in Brushed Nickel&nbsp;Tension Single Straight Shower
                                         Rod
@@ -751,7 +751,7 @@
                             <div id="dyob-item-wrapper" class=" col-md-4 col-sm-6 internal dyob-item-wrapper">
                                 <div id="112" class="item internal" style="padding-left: 0">
                                     <img alt="4x4 tile pattern" id="112" data-name="44-in to 72-in Old World Bronze Tension Single Straight Shower Rod"
-                                        class="dyob-item item ImgDYOB ImgDYOB7 roads3oilrubbedbronze"
+                                        class="dyob-item item ImgDYOB ImgDYOB7 roads4brass" data-type="png"
                                         src="assets/images/roads-latest-l-3.jpg">
                                     <p class="itemTag">44-in to 72-in Old World Bronze Tension Single Straight Shower
                                         Rod
@@ -769,7 +769,7 @@
                             <div id="dyob-item-wrapper" class=" col-md-4 col-sm-6 internal dyob-item-wrapper">
                                 <div id="112" class="item internal" style="padding-left: 0">
                                     <img alt="4x4 tile pattern" id="112" data-name="59-in to 60-in Chrome Fixed Single Curve Shower Rod"
-                                        class="dyob-item item ImgDYOB ImgDYOB7 roads3white"
+                                        class="dyob-item item ImgDYOB ImgDYOB7 roads3white" data-type="png"
                                         src="assets/images/roads-latest-l2-1.jpg">
                                     <p class="itemTag">59-in to 60-in Chrome Fixed Single Curve Shower Rod
 
@@ -780,7 +780,7 @@
                             <div id="dyob-item-wrapper" class=" col-md-4 col-sm-6 internal dyob-item-wrapper">
                                 <div id="112" class="item internal" style="padding-left: 0">
                                     <img alt="4x4 tile pattern" id="112" data-name="59-in to 60-in Brushed Nickel Fixed Single Curve Shower Rod"
-                                        class="dyob-item item ImgDYOB ImgDYOB7 roads3brushednickel" src="assets/images/
+                                        class="dyob-item item ImgDYOB ImgDYOB7 roads3brushednickel" data-type="png" src="assets/images/
 roads-latest-l2-3.jpg">
                                     <p class="itemTag">59-in to 60-in Brushed Nickel Fixed Single Curve Shower Rod
 
@@ -791,7 +791,7 @@ roads-latest-l2-3.jpg">
                             <div id="dyob-item-wrapper" class=" col-md-4 col-sm-6 internal dyob-item-wrapper">
                                 <div id="112" class="item internal" style="padding-left: 0">
                                     <img alt="4x4 tile pattern" id="112" data-name="59-in to 60-in Old World Bronze Fixed Single Curve Shower Rod"
-                                        class="dyob-item item ImgDYOB ImgDYOB7 roads3oilrubbedbronze " src="assets/images/
+                                        class="dyob-item item ImgDYOB ImgDYOB7 roads3oilrubbedbronze" data-type="png" src="assets/images/
 roads-latest-l2-2.jpg">
                                     <p class="itemTag">59-in to 60-in Old World Bronze Fixed Single Curve Shower Rod
 

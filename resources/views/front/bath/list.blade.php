@@ -82,44 +82,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="row">
-                        <div id="DYOBColorsText1" class="row Available-colors-for col-sm-12 DYOBColors"
-                            style="display:inline-flex;display:-webkit-inline-flex;">Select your color
-                        </div>
-                        <div id="DYOBColors1" class="DYOBColors"
-                            style="display:inline-flex;display:-webkit-inline-flex;">
-                            <i id="10step1" onclick="getImage(this.id,1,133,'');"
-                                class="inline color10 DYOBColorSelected"></i>
-                            <i id="12step1" onclick="getImage(this.id,1,133,'pearl');" class="inline color12 "></i>
-                            <i id="11step1" onclick="getImage(this.id,1,133,'whitemarble');"
-                                class="inline color11 "></i>
-                            <i id="13step1" onclick="getImage(this.id,1,133,'ivorymarble');"
-                                class="inline color13"></i>
-                        </div>
-                    </div> -->
-                    <!-- <div id="DYOBColorsText1" class="row Available-colors-for col-sm-12 DYOBColors"
-                        style="display:inline-flex;display:-webkit-inline-flex;">Select your Size</div>
-                    <div id="DYOBSize1" class="DYOBSize" style="display:inline-flex;display:-webkit-inline-flex;">
-                        <form>
-                            <div class="form-check">
-                                <input type="radio" name="tub_size" class="form-check-input" id="">
-                                <label class="form-check-label" for="exampleCheck1">1X</label>
-                            </div>
-                            <div class="form-check">
-                                <input type="radio" name="tub_size" class="form-check-input" id="">
-                                <label class="form-check-label" for="exampleCheck1">2X</label>
-                            </div>
-                            <div class="form-check">
-                                <input type="radio" name="tub_size" class="form-check-input" id="">
-                                <label class="form-check-label" for="exampleCheck1">3X</label>
-                            </div>
-                            <div class="form-check">
-                                <input type="radio" name="tub_size" class="form-check-input" id="">
-                                <label class="form-check-label" for="exampleCheck1">4X</label>
-                            </div>
-                        </form>
-                    </div>
-                </div> -->
                 <div class="row">
                     <div class="panel panel-default panel-default-dyob">
                         <div class="panel-body panel-dyob">
@@ -142,7 +104,7 @@
                             <div id="dyob-item-wrapper" class="col-lg-6 col-md-6 col-sm-6 internal dyob-item-wrapper">
                                 <div id="112" class="item internal" style="padding-left: 0">
                                     <img alt="4x4 tile pattern" id="112" data-name="Gray Diamond"
-                                        class="dyob-item item ImgDYOB ImgDYOB2 wall-pattren10white"
+                                        class="dyob-item item ImgDYOB ImgDYOB2 wall-pattren10whitewhitemarble" data-type="png"
                                         src="assets/images/wall-pattren1.jpg">
                                     <p class="itemTag">Gray Diamond</p>
                                 </div>
@@ -150,7 +112,7 @@
                             <div id="dyob-item-wrapper" class="col-lg-63 col-md-6 col-sm-6 internal dyob-item-wrapper">
                                 <div id="112" class="item internal" style="padding-left: 0">
                                     <img alt="4x4 tile pattern" id="112" data-name="Almond 8X10"
-                                        class="dyob-item item ImgDYOB ImgDYOB2 wall-pattren2whiteivorymarble"
+                                        class="dyob-item item ImgDYOB ImgDYOB2 wall-pattren2whiteivorymarble" data-type="png"
                                         src="assets/images/wall-pattren2.jpg">
                                     <p class="itemTag">Almond 8X10</p>
                                 </div>
@@ -158,7 +120,7 @@
                             <div id="dyob-item-wrapper" class="col-lg-63 col-md-6 col-sm-6 internal dyob-item-wrapper">
                                 <div id="112" class="item internal" style="padding-left: 0">
                                     <img alt="4x4 tile pattern" id="112" data-name="White Subway"
-                                        class="dyob-item item ImgDYOB ImgDYOB2 wall-pattren3white"
+                                        class="dyob-item item ImgDYOB ImgDYOB2 wall-pattren3white" data-type="png"
                                         src="assets/images/wall-pattren3.jpg">
                                     <p class="itemTag">White Subway</p>
                                 </div>
@@ -546,7 +508,7 @@
                             <div id="dyob-item-wrapper" class=" col-md-4 col-sm-6 internal dyob-item-wrapper">
                                 <div id="112" class="item internal" style="padding-left: 0">
                                     <img alt="4x4 tile pattern" id="112"
-                                        class="dyob-item item ImgDYOB ImgDYOB7 roads4white" data-name="44-in to 72-in Brushed Nickel Tension Single Straight Shower Rod"
+                                        class="dyob-item item ImgDYOB ImgDYOB7 roads4white" data-type="png" data-name="44-in to 72-in Brushed Nickel Tension Single Straight Shower Rod"
                                         src="assets/images/roads-latest-l-1.jpg">
                                     <p class="itemTag">44-in to 72-in Brushed Nickel Tension Single Straight Shower Rod
 
@@ -556,7 +518,7 @@
                             <div id="dyob-item-wrapper" class=" col-md-4 col-sm-6 internal dyob-item-wrapper">
                                 <div id="112" class="item internal" style="padding-left: 0">
                                     <img alt="4x4 tile pattern" id="112"
-                                        class="dyob-item item ImgDYOB ImgDYOB7 roads4brushednickel"
+                                        class="dyob-item item ImgDYOB ImgDYOB7 roads4brushednickel" data-type="png"  
                                         src="assets/images/roads-latest-l-2.jpg">
                                     <p class="itemTag">44-in to 72-in Brushed Nickel Tension Single Straight Shower Rod
 
@@ -566,11 +528,10 @@
                             <div id="dyob-item-wrapper" class=" col-md-4 col-sm-6 internal dyob-item-wrapper">
                                 <div id="112" class="item internal" style="padding-left: 0">
                                     <img alt="4x4 tile pattern" id="112"
-                                        class="dyob-item item ImgDYOB ImgDYOB7 roads3oilrubbedbronze" data-name="44-in to 72-in Old World Bronze Tension Single Straight Shower Rod"
+                                        class="dyob-item item ImgDYOB ImgDYOB7 roads4brass" data-type="png"  data-name="44-in to 72-in Old World Bronze Tension Single Straight Shower Rod"
                                         src="assets/images/roads-latest-l-3.jpg">
                                     <p class="itemTag">44-in to 72-in Old World Bronze Tension Single Straight Shower
                                         Rod
-
                                     </p>
                                 </div>
                             </div>
@@ -583,7 +544,7 @@
                             <div id="dyob-item-wrapper" class=" col-md-4 col-sm-6 internal dyob-item-wrapper">
                                 <div id="112" class="item internal" style="padding-left: 0">
                                     <img alt="4x4 tile pattern" id="112"
-                                        class="dyob-item item ImgDYOB ImgDYOB7 roads3white" data-name="59-in to 60-in Chrome Fixed Single Curve Shower Rod"
+                                        class="dyob-item item ImgDYOB ImgDYOB7 roads3white" data-type="png" data-name="59-in to 60-in Chrome Fixed Single Curve Shower Rod"
                                         src="assets/images/roads-latest-l2-1.jpg">
                                     <p class="itemTag">59-in to 60-in Chrome Fixed Single Curve Shower Rod
 
@@ -594,7 +555,7 @@
                             <div id="dyob-item-wrapper" class=" col-md-4 col-sm-6 internal dyob-item-wrapper">
                                 <div id="112" class="item internal" style="padding-left: 0">
                                     <img alt="4x4 tile pattern" id="112" data-name="59-in to 60-in Brushed Nickel Fixed Single Curve Shower Rod"
-                                        class="dyob-item item ImgDYOB ImgDYOB7 roads3brushednickel" src="assets/images/
+                                        class="dyob-item item ImgDYOB ImgDYOB7 roads3brushednickel" data-type="png" src="assets/images/
 roads-latest-l2-3.jpg">
                                     <p class="itemTag">59-in to 60-in Brushed Nickel Fixed Single Curve Shower Rod
 
@@ -605,7 +566,7 @@ roads-latest-l2-3.jpg">
                             <div id="dyob-item-wrapper" class=" col-md-4 col-sm-6 internal dyob-item-wrapper">
                                 <div id="112" class="item internal" style="padding-left: 0">
                                     <img alt="4x4 tile pattern" id="112" data-name="59-in to 60-in Old World Bronze Fixed Single Curve Shower Rod"
-                                        class="dyob-item item ImgDYOB ImgDYOB7 roads3oilrubbedbronze" src="assets/images/
+                                        class="dyob-item item ImgDYOB ImgDYOB7 roads3oilrubbedbronze" data-type="png" src="assets/images/
 roads-latest-l2-2.jpg">
                                     <p class="itemTag">59-in to 60-in Old World Bronze Fixed Single Curve Shower Rod
 

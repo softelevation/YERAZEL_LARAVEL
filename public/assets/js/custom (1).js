@@ -2,7 +2,11 @@ $(document).ready(function () {
     // Listen for clicks to "img" elements inside the element where id="sinistra"
     $(document).on('click','.ImgDYOB1',function(){
 		$('.ImgDYOB1').removeClass('active');
-		var tubImg = $('meta[name="csrf-token"]').data('url')+'/assets/images/'+$(this).attr("class").split(' ').pop()+'.jpg'; 
+		let type='.jpg';
+		if($(this).data('type') && $(this).data('type') == 'png'){
+			type = '.png';
+		}
+		var tubImg = $('meta[name="csrf-token"]').data('url')+'/assets/images/'+$(this).attr("class").split(' ').pop()+type; 
         $("#step1").attr('src',tubImg);
         $("#step1").show();
 		$(this).addClass('active');
@@ -13,7 +17,11 @@ $(document).ready(function () {
    
 	$(document).on('click','.ImgDYOB2',function(){
 	   $('.ImgDYOB2').removeClass('active');
-	   var tubImg = $('meta[name="csrf-token"]').data('url')+'/assets/images/'+$(this).attr("class").split(' ').pop()+'.jpg';
+	   let type='.jpg';
+	   if($(this).data('type') && $(this).data('type') == 'png'){
+		type = '.png';
+		}
+	   var tubImg = $('meta[name="csrf-token"]').data('url')+'/assets/images/'+$(this).attr("class").split(' ').pop()+type;
 	   $("#step2").attr('src',tubImg);
 	   $("#step2").show();
 	   $(this).addClass('active');
@@ -49,39 +57,13 @@ $(document).ready(function () {
         return false;
 	});
 	
-	$(document).on('click','.ImgDYOB7',function(){
-		$('.ImgDYOB7').removeClass('active');
-		let type='.jpg';
-		if($(this).data('type') && $(this).data('type') == 'png'){
-		 type = '.png';
-		 }
-		var tubImg = $('meta[name="csrf-token"]').data('url')+'/assets/images/'+$(this).attr("class").split(' ').pop()+type;
-		$("#step7").attr('src',tubImg);
-		$("#step7").show();
-		$(this).addClass('active');
-		ajaxFunction({'step7': tubImg,'step7_name': $(this).data("name")});
-		 return false;
-	 });
-
-	 $(document).on('click','.ImgDYOB2',function(){
-		$('.ImgDYOB2').removeClass('active');
-		let type='.jpg';
-		if($(this).data('type') && $(this).data('type') == 'png'){
-		 type = '.png';
-		 }
-		var tubImg = $('meta[name="csrf-token"]').data('url')+'/assets/images/'+$(this).attr("class").split(' ').pop()+type;
-		$("#step2").attr('src',tubImg);
-		$("#step2").show();
-		$(this).addClass('active');
-		ajaxFunction({'step2': tubImg,'step2_name': $(this).data("name")});
-		 return false;
-	 });
-	
-
-
 	$(document).on('click','.ImgDYOB5',function(){
 	   $('.ImgDYOB5').removeClass('active');
-	   var tubImg = $('meta[name="csrf-token"]').data('url')+'/assets/images/'+$(this).attr("class").split(' ').pop()+'.jpg';
+	   let type='.jpg';
+	   if($(this).data('type') && $(this).data('type') == 'png'){
+		type = '.png';
+		}
+	   var tubImg = $('meta[name="csrf-token"]').data('url')+'/assets/images/'+$(this).attr("class").split(' ').pop()+type;
 	   $("#step5").attr('src',tubImg);
 	   $("#step5").show();
 	   $(this).addClass('active');
@@ -103,6 +85,19 @@ $(document).ready(function () {
         return false;
 	});
 	
+	$(document).on('click','.ImgDYOB7',function(){
+	   $('.ImgDYOB7').removeClass('active');
+	   let type='.jpg';
+	   if($(this).data('type') && $(this).data('type') == 'png'){
+		type = '.png';
+		}
+	   var tubImg = $('meta[name="csrf-token"]').data('url')+'/assets/images/'+$(this).attr("class").split(' ').pop()+type;
+	   $("#step7").attr('src',tubImg);
+	   $("#step7").show();
+	   $(this).addClass('active');
+	   ajaxFunction({'step7': tubImg,'step7_name': $(this).data("name")});
+        return false;
+	});
 	
 	$(document).on('click','button[class="btn rect-button buy_Now"]',function(){
 		$('div[class="mainOuterDiv design-details"]').hide();
