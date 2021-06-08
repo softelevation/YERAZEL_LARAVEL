@@ -718,21 +718,11 @@
 <script>
 	$(document).ready(function(){
 		$('a[class="listing-address popup-gmaps"]').click(function() {
-			$("#myModal").modal('show');
 			let iframe_url_val = $(this).children().text().trim();
 			let iframe_url = 'https://maps.google.com/maps?q='+iframe_url_val+'&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed';
-				$.ajax({
-					url: "google-map-get",
-					type: 'POST',
-					data: {
-							"url_name": iframe_url,
-							"_token": "{{ csrf_token() }}"
-					},
-					success: function (response)
-					{
-						$('#map-container-google-1').html(response);
-					}
-				});
+			let iframe_url_html = '<iframe id="setGoogleMap" class="w-100" src="'+iframe_url+'" frameborder="0" scrolling="no"></iframe>';
+			$('#map-container-google-1').html(iframe_url_html);
+			$("#myModal").modal('show');
 		});
 	});
 	
