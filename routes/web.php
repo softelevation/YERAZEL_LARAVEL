@@ -27,6 +27,8 @@ Route::group(['namespace'=>'front'],function() {
 	Route::get('/login', 'HomeController@login')->name('login');
 	Route::post('/login', 'HomeController@loginPost')->name('login');
 	
+	Route::post('/google-map-get', 'HomeController@googleMapGet');
+	
 	Route::get('/dashboard', 'HomeController@dashboard')->name('dashboard');
 	Route::get('/client', 'HomeController@client')->name('client');
 	Route::get('/showing', 'HomeController@showing')->name('showing');

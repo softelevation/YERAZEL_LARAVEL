@@ -1,5 +1,28 @@
 @include('front/layouts.header')
 
+
+<div id="myModal" class="modal" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="propertyMap-container">
+			<div id="map-container-google-1" class="z-depth-1-half map-container">
+				
+			</div>
+			<a href="#" class="streetView">Street View</a>
+		</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
     <section class="banner_sec">
         <div class="bannerSection ">
             <div class="bannerContent">
@@ -517,7 +540,7 @@
                                    <div class="listing-content">
                                       <div class="listing-title">
                                          <h4 class="mb-3"><a href="/Details/{{@$val['ListingKeyNumeric']}}">{{@$val['ListOfficeName']}}</a></h4>
-                                         <a class="listing-address popup-gmaps" href="/">
+                                         <a class="listing-address popup-gmaps" href="javascript:void(0)">
                                             <p class="mb-0"><i class="fa fa-map-marker"></i> {{@$val['City']}} {{@$val['StateOrProvince']}} {{@$val['PostalCode']}}</p>
                                            
                                          </a>
@@ -692,3 +715,25 @@
     </section>
 
 @include('front/layouts.footer')
+<script>
+	$(document).ready(function(){
+		$('a[class="listing-address popup-gmaps"]').click(function() {
+			$("#myModal").modal('show');
+			let iframe_url_val = $(this).children().text().trim();
+			let iframe_url = 'https://maps.google.com/maps?q='+iframe_url_val+'&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed';
+				$.ajax({
+					url: "google-map-get",
+					type: 'POST',
+					data: {
+							"url_name": iframe_url,
+							"_token": "{{ csrf_token() }}"
+					},
+					success: function (response)
+					{
+						$('#map-container-google-1').html(response);
+					}
+				});
+		});
+	});
+	
+</script>

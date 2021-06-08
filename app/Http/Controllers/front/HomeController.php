@@ -146,6 +146,11 @@ class HomeController extends Controller
 		}
 	}
 	
+	function googleMapGet(Request $request){
+		$input = $request->url_name;
+		return '<iframe id="setGoogleMap" class="w-100" src="'.$input.'" frameborder="0" scrolling="no"></iframe>';
+	}
+	
 	function dashboard(){
 		$client = Client::all();
 		return view('front/dashboard')->with('clients',$client);
