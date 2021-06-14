@@ -5,14 +5,14 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
+        <h5 class="modal-title">Map</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
         <div id="propertyMap-container">
-			<div id="map-container-google-1" class="z-depth-1-half map-container">
+			<div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 390px;">
 				
 			</div>
 			<a href="#" class="streetView">Street View</a>
@@ -715,13 +715,41 @@
     </section>
 
 @include('front/layouts.footer')
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1erXOJ7-_yyd3jYyRYrMh7THiUxpAevU&libraries=places&callback=initAutocomplete"
+        async defer></script>
 <script>
 	$(document).ready(function(){
 		$('a[class="listing-address popup-gmaps"]').click(function() {
-			let iframe_url_val = $(this).children().text().trim();
-			let iframe_url = 'https://maps.google.com/maps?q='+iframe_url_val+'&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed';
-			let iframe_url_html = '<iframe id="setGoogleMap" class="w-100" src="'+iframe_url+'" frameborder="0" scrolling="no"></iframe>';
-			$('#map-container-google-1').html(iframe_url_html);
+			let address = $(this).children().text().trim();
+			function myLatlng(myLatlng) {
+				const map = new google.maps.Map(document.getElementById("map-container-google-1"), {
+					zoom: 14,
+					center: myLatlng,
+				});
+				const marker = new google.maps.Marker({
+					position: myLatlng,
+					map: map,
+					title: address,
+				});
+			}
+			
+			var geocoder = new google.maps.Geocoder();
+			// var address = "new york";
+			geocoder.geocode( { 'address': address}, function(results, status) {
+				if (status == google.maps.GeocoderStatus.OK) {
+					// console.log({lat: results[0].geometry.location.lat(),lng: results[0].geometry.location.lng()});
+					// alert({lat: results[0].geometry.location.lat(),lng: results[0].geometry.location.lng()});
+					myLatlng({lat: results[0].geometry.location.lat(),lng: results[0].geometry.location.lng()});
+				}
+			});
+
+			// let iframe_url_val = $(this).children().text().trim();
+			// let iframe_url = 'https://maps.google.com/maps?q='+iframe_url_val+'&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed';
+			// let iframe_url_html = '<iframe id="setGoogleMap" class="w-100" src="'+iframe_url+'" frameborder="0" scrolling="no"></iframe>';
+			// $('#map-container-google-1').html(iframe_url_html);
+			
+			// const myLatlng = { lat: -25.363, lng: 131.044 };
+		
 			$("#myModal").modal('show');
 		});
 	});
