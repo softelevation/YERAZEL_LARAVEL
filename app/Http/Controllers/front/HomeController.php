@@ -15,7 +15,7 @@ class HomeController extends Controller
     public function index(){
     	// $ch = curl_init();
         // $token = getToken(); // get token to helper
-        // $token = 'c1a5714bef1cc5ed68e1e48e063ee0a22a707949a405bd3043e55e5ab11231c6'; // get token to helper
+        // $token = '16680cbcfd5bb26c44ae3484a93370c1fe4eeb43637ef31fd9d4d2f579dabc3d'; // get token to helper
 
 		// curl_setopt($ch, CURLOPT_URL, 'https://staging.h.api.crmls.org/RESO/OData/Property?$top=5');
 		// curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
@@ -33,8 +33,9 @@ class HomeController extends Controller
 		// }
         // curl_close($ch);
         // $response = json_decode($res, true);
+		
+		
 
-		// $save_val = array();
 		// if($response){
 			// $save_val = array();
 			// foreach($response['value'] as $res_ponse){
@@ -43,7 +44,8 @@ class HomeController extends Controller
 									// 'LotSizeSquareFeet'=>$res_ponse['LotSizeSquareFeet'],'ListOfficeName'=>$res_ponse['ListOfficeName'],
 									// 'City'=>$res_ponse['City'],'StateOrProvince'=>$res_ponse['StateOrProvince'],
 									// 'PostalCode'=>$res_ponse['PostalCode'],'LotSizeUnits'=>$res_ponse['LotSizeUnits'],
-									// 'BedroomsTotal'=>$res_ponse['BedroomsTotal'],'BathroomsFull'=>$res_ponse['BathroomsFull']
+									// 'BedroomsTotal'=>$res_ponse['BedroomsTotal'],'BathroomsFull'=>$res_ponse['BathroomsFull'],
+									// 'Longitude'=>$res_ponse['Longitude'],'Latitude'=>$res_ponse['Latitude']
 					// );
 				
 			// }

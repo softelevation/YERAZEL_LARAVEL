@@ -541,8 +541,7 @@
                                       <div class="listing-title">
                                          <h4 class="mb-3"><a href="/Details/{{@$val['ListingKeyNumeric']}}">{{@$val['ListOfficeName']}}</a></h4>
                                          <a class="listing-address popup-gmaps" href="javascript:void(0)">
-                                            <p class="mb-0"><i class="fa fa-map-marker"></i> {{@$val['City']}} {{@$val['StateOrProvince']}} {{@$val['PostalCode']}}</p>
-                                           
+                                            <p class="mb-0" data-lat="{{$val['Latitude']}}" data-long="{{$val['Longitude']}}"><i class="fa fa-map-marker"></i> {{@$val['City']}} {{@$val['StateOrProvince']}} {{@$val['PostalCode']}}</p>
                                          </a>
                                       </div>
                                       <ul class="listing-features">
@@ -720,6 +719,10 @@
 <script>
 	$(document).ready(function(){
 		$('a[class="listing-address popup-gmaps"]').click(function() {
+			// console.log();
+			 // data-lat="{{$val['Latitude']}}" data-long="{{$val['Longitude']}}"
+			let data_lat = $(this).children().data('lat');
+			let data_long = $(this).children().data('long');
 			let address = $(this).children().text().trim();
 			function myLatlng(myLatlng) {
 				const map = new google.maps.Map(document.getElementById("map-container-google-1"), {
@@ -733,15 +736,20 @@
 				});
 			}
 			
-			var geocoder = new google.maps.Geocoder();
+			// let data_lat = $(this).children().data('lat');
+			// let data_long = $(this).children().data('long');
+			// var geocoder = new google.maps.Geocoder();
 			// var address = "new york";
-			geocoder.geocode( { 'address': address}, function(results, status) {
-				if (status == google.maps.GeocoderStatus.OK) {
+			// geocoder.geocode( { 'address': address}, function(results, status) {
+				// if (status == google.maps.GeocoderStatus.OK) {
 					// console.log({lat: results[0].geometry.location.lat(),lng: results[0].geometry.location.lng()});
 					// alert({lat: results[0].geometry.location.lat(),lng: results[0].geometry.location.lng()});
-					myLatlng({lat: results[0].geometry.location.lat(),lng: results[0].geometry.location.lng()});
-				}
-			});
+					// myLatlng({lat: results[0].geometry.location.lat(),lng: results[0].geometry.location.lng()});
+					if(data_lat && data_lat){
+						myLatlng({lat: data_lat,lng: data_long});
+					}
+				// }
+			// });
 
 			// let iframe_url_val = $(this).children().text().trim();
 			// let iframe_url = 'https://maps.google.com/maps?q='+iframe_url_val+'&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed';
